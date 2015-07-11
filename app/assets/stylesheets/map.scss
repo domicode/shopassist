@@ -12,12 +12,6 @@ $pin-color: orange;
   box-shadow: inset 0 0 20px darkred;
   animation: pulse 1s linear infinite;
   -webkit-animation: pulse 1s linear infinite;
-
-  &#bread {
-    background: blue;
-    top: 60px;
-    left: 613px;
-  }
 }
 
 @keyframes "pulse" {
@@ -59,11 +53,17 @@ $pin-color: orange;
  }
 }
 
-
-
 .pin {
   display: none;
-  background: blue;
+  background: green;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5rem;
+  color: white;
+
+  &:after {
+    content: 'x'
+  }
 }
 
 #map {
@@ -90,7 +90,7 @@ $pin-color: orange;
   height: 100%;
   width: 100%;
   text-align: center;
-  line-height: 4rem;
+  line-height: 2rem;
 
   &:before {
     content: '+';
