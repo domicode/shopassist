@@ -2,7 +2,7 @@
   background: lighten(#444, 20%);
   font-size: 4rem;
   width: 98%;
-  margin: 1%;
+  margin: 2% 1% 1% 1%;
   border: none;
 }
 
@@ -42,4 +42,8 @@
     right: 1rem;
     font-weight: bold;
   }
+}
+
+#artisansList {
+  display: none;
 }
