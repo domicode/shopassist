@@ -1,0 +1,19 @@
+body {
+  font-family: arial;
+}
+
+.wrapper {
+}
+
+.checked {
+  text-decoration: line-through;
+
+  &:before {
+    content: '\2713';
+    text-decoration: none;
+  }
+}
+
+.selected {
+  background: green !important;
+}
