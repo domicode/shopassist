@@ -10,26 +10,72 @@
   <input id="storesearch" type="search" placeholder="search ...">
 </div>
 
-<div id="migros" class="shop">
-  <div class="shop-title">
-    Migros,
-    <span>Limmatplatz</span>
-    <span class="distance">200m</span>
-  </div>
-  <%= image_tag('migros_limmatplatz.jpg') %>
+<div id="shopsList" class="main-menu-list">
+  <%= link_to showmap_path do %>
+    <div id="migros" class="shop">
+      <div class="shop-title">
+        Migros,
+        <span>Limmatplatz</span>
+        <span class="distance">200m</span>
+      </div>
+      <%= image_tag('migros_limmatplatz.jpg') %>
+    </div>
+  <% end %>
+
+  <%= link_to showmap_path do %>
+    <div id="coop" class="shop">
+      <div class="shop-title">
+        Coop,
+        <span>Röntgenstrasse 20</span>
+        <span class="distance">400m</span>
+      </div>
+      <%= image_tag('coop_rontgestrasse.jpg') %>
+    </div>
+  <% end %>
+
+  <%= link_to showmap_path do %>
+    <div id="denner" class="shop">
+      <div class="shop-title">
+        Denner,
+        <span>Röntgenstrasse 20</span>
+        <span class="distance">1.5km</span>
+      </div>
+      <%= image_tag('denner.jpg') %>
+    </div>
+  <% end %>
 </div>
-<div id="coop" class="shop">
-  <div class="shop-title">
-    Coop,
-    <span>Röntgenstrasse 20</span>
-    <span class="distance">400m</span>
-  </div>
-  <%= image_tag('floorpan.jpg') %>
-</div>
-<div id="denner" class="shop">
-  <div class="shop-title">
-    Denner,
-    <span>Röntgenstrasse 20</span>
-    <span class="distance">1.5km</span>
-  </div>
+
+<div id="artisansList" class="main-menu-list">
+  <%= link_to showmap_path do %>
+    <div id="jakob" class="shop">
+      <div class="shop-title">
+        St. Jakob Bäckerei,
+        <span>Limmatplatz</span>
+        <span class="distance">200m</span>
+      </div>
+      <%= image_tag('st_jakob_bakerei.jpg') %>
+    </div>
+  <% end %>
+
+  <%= link_to showmap_path do %>
+    <div id="bachmann" class="shop">
+      <div class="shop-title">
+        Confiserie Bachmann,
+        <span>Röntgenstrasse 20</span>
+        <span class="distance">400m</span>
+      </div>
+      <%= image_tag('bachmann.jpg') %>
+    </div>
+  <% end %>
+
+  <%= link_to showmap_path do %>
+    <div id="spruengli" class="shop">
+      <div class="shop-title">
+        Sprüngli,
+        <span>Röntgenstrasse 20</span>
+        <span class="distance">1.5km</span>
+      </div>
+      <%= image_tag('sprungli.jpg') %>
+    </div>
+  <% end %>
 </div>
