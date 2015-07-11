@@ -1,5 +1,15 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: arial;
+  margin: 0;
+  background: #444;
 }
 
 .wrapper {

@@ -1,3 +1,41 @@
-// Place all the styles related to the shops controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#storesearch {
+  background: lighten(#444, 20%);
+  font-size: 4rem;
+  width: 98%;
+  margin: 1%;
+  border: none;
+}
+
+.shop {
+  width: 97%;
+  margin: 1.5%;
+  height: 500px;
+  border: 1px solid white;
+  list-style-type: none;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.shop-title {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-weight: bold;
+  width: 97%;
+
+  span {
+    font-weight: normal;
+  }
+
+  span.distance {
+    position: absolute;
+    right: 1rem;
+    font-weight: bold;
+  }
+}
