@@ -20,9 +20,9 @@ $(document).ready( function () {
     $('#groceryList').show();
   });
 
-  $('.product').on('click', function () {
+  $('.xproduct').on('click', function () {
     $('.pin').hide();
-    $('.product').removeClass('selected');
+    $('.xproduct').removeClass('selected');
     $('#'+$(event.target).attr('id')).toggle();
     $(event.target).addClass('selected');
     $('.addProduct').removeClass('selected');
