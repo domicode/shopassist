@@ -1,8 +1,14 @@
 <header>
   <ul id="navigation">
-    <li id="shops" class="navigation-option select"></li>
-    <li id="artisans" class="navigation-option"></li>
-    <li id="groceries" class="navigation-option"></li>
+    <li id="shops" class="navigation-option select">
+      <%= render partial: 'location' %>
+    </li>
+    <li id="artisans" class="navigation-option">
+      <%= render partial: 'artisans' %>
+    </li>
+    <li id="groceries" class="navigation-option">
+      <%= render partial: 'list' %>
+    </li>
   </ul>
 </header>
 
@@ -121,22 +127,38 @@
 
 <div id="findProductList" class="main-menu-list">
   <div class="searchbox">
-    <input id="storesearch" type="search" placeholder="search ..." value="apples">
+    <input id="storesearch" type="search" placeholder="search ..." value="pasta gluten free">
   </div>
 
-  <div id="apple" class="product">
+  <div id="pasta1" class="product">
     <div class="product-title">
-      Apple Golden
+    Pasta Barilla
     </div>
-    <%= image_tag('apple.jpg') %>
+    <%= image_tag('pasta1.jpg') %>
     <div class="product-rating">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</div>
   </div>
 
-  <div id="apple" class="product">
+  <div id="pasta2" class="product">
+    <div class="product-title">
+      Basta abcd
+    </div>
+    <%= image_tag('pasta2.jpg') %>
+    <div class="product-rating">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</div>
+  </div>
+
+  <div id="pasta3" class="product">
     <div class="product-title">
       Apple Gala
     </div>
-    <%= image_tag('apple.jpg') %>
+    <%= image_tag('pasta3.jpg') %>
+    <div class="product-rating">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</div>
+  </div>
+
+  <div id="pasta3" class="product">
+    <div class="product-title">
+      Apple Gala
+    </div>
+    <%= image_tag('pasta4.jpg') %>
     <div class="product-rating">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</div>
   </div>
 

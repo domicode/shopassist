@@ -26,19 +26,16 @@ $orange: rgb(245,160,23);
 
   #shops {
     &:after {
-      content: 'A';
     }
   }
 
   #groceries {
     &:after {
-      content: 'B';
     }
   }
 
   #artisans {
     &:after {
-      content: 'C';
     }
   }
 }
