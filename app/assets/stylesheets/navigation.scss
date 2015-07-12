@@ -28,7 +28,7 @@
     }
   }
 
-  #list {
+  #groceries {
     &:after {
       content: 'B';
     }
@@ -37,6 +37,42 @@
   #artisans {
     &:after {
       content: 'C';
+    }
+  }
+}
+
+#applicationHeader {
+  height: 5rem;
+  background: white;
+  margin-bottom: 1.5rem;
+}
+
+.navigation-menu {
+  img {
+    height: 4rem;
+    line-height: 5rem;
+    float: right;
+    margin: 0.5rem 1rem;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    font-size: 3rem;
+    right: 0;
+    top: 2rem;
+    background-color: white;
+    list-style-type: none;
+    z-index: 1;
+    padding: 1rem 2rem;
+
+    li {
+      border-bottom: 1px solid black;
+      padding: 1rem;
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
 }

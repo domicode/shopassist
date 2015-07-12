@@ -8,6 +8,21 @@
 </head>
 <body>
 
+<header id="applicationHeader">
+  <div class="login"></div>
+  <div class="navigation-menu">
+    <%= image_tag('logo.png') %>
+    <ul>
+      <li id="groceries" class="navigation-option">My List</li>
+      <li id="shops" class="navigation-option">Find Shop</li>
+      <li id="findProduct" class="navigation-option">Find product</li>
+      <li id="artisans" class="navigation-option">Find Artisan</li>
+      <li id="online" class="navigation-option">Online Purchase</li>
+      <li id="feedback" class="navigation-option">Feedback</li>
+    </ul>
+  </div>
+</header>
+
 <%= yield %>
 
 </body>
