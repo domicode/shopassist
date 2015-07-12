@@ -56,8 +56,11 @@ $orange: rgb(245,160,23);
   top: 1rem;
 }
 
-#artisansList, #groceriesList, #findProductList {
+#shopsList, #artisansList, #groceriesList, #findProductList {
   display: none;
+}
+#findProductList {
+  display: block;
 }
 
 #groceriesList {

@@ -57,7 +57,7 @@
     <div id="bachmann" class="shop">
       <div class="shop-title">
         Confiserie Bachmann,
-        <span>Röntgenstrasse 20</span>
+        <span>HB Zürich</span>
         <span class="distance">400m</span>
       </div>
       <div class="rating">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</div>
@@ -91,29 +91,28 @@
 </div>
 
 <div id="groceriesList" class="main-menu-list">
-  <%= link_to root_path do %>
-    <div id="list1" class="shop">
-      <div class="list-title">
-        Tuesday, 14/07/2015
-      </div>
-      <ul>
-        <li>&#x2713; bread</li>
-        <li>milk</li>
-        <li>&#x2713; oranges</li>
-        <li>&#x2713; apples</li>
-        <li>&#x2713; pasta (gluten-free)</li>
-        <li>&#x2713; onions</li>
-        <li>tomatoes</li>
-      </ul>
+
+  <div id="list1" class="shop">
+    <div class="list-title">
+      Saturday, 11/07/2015
     </div>
-  <% end %>
+    <ul>
+      <li>&#x2713; bread</li>
+      <li>milk</li>
+      <li>&#x2713; oranges</li>
+      <li>&#x2713; apples</li>
+      <li>&#x2713; pasta (gluten-free)</li>
+      <li>&#x2713; onions</li>
+      <li>tomatoes</li>
+    </ul>
+  </div>
 
 
   <%= 10.times do |x| %>
     <%= link_to root_path do %>
       <div id="list2" class="shop">
         <div class="list-title collapsed">
-          <%= (Time.new - 2*x.days).strftime('%A, %d/%m/%Y') %>
+          <%= (Time.new - 3*x.days).strftime('%A, %d/%m/%Y') %>
         </div>
       </div>
     <% end %>
@@ -130,9 +129,15 @@
       Apple Golden
     </div>
     <%= image_tag('apple.jpg') %>
+    <div class="product-rating">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</div>
   </div>
 
-  <div>
-    <div class="rating">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</div>
+  <div id="apple" class="product">
+    <div class="product-title">
+      Apple Gala
+    </div>
+    <%= image_tag('apple.jpg') %>
+    <div class="product-rating">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</div>
   </div>
+
 </div>
