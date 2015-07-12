@@ -31,4 +31,8 @@ $(document).ready( function () {
   $('.addProduct').on('click', function (event) {
     $(event.target).parent().toggleClass('checked');
   });
+
+  $('#storeInfos').on('click', function (event) {
+    $('.store-info').toggle();
+  });
 });

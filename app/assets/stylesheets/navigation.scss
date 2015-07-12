@@ -1,3 +1,5 @@
+$orange: rgb(245,160,23);
+
 #navigation {
   width: 100%;
   -webkit-margin-before: 0;
@@ -5,20 +7,20 @@
   margin-top: -18px;
 
   li {
-    height: 5rem;
+    height: 7rem;
     float: left;
     list-style-type: none;
     width: 15%;
     text-align: center;
     border: 1px solid black;
-    background: lighten(orange, 30%);
+    background: lighten($orange, 30%);
     font-weight: bold;
     font-size: 3rem;
-    line-height: 5rem;
+    line-height: 7rem;
 
     &.select {
       width: 70%;
-      background: orange
+      background: $orange;
     }
   }
 
@@ -42,14 +44,14 @@
 }
 
 #applicationHeader {
-  height: 5rem;
+  height: 7rem;
   background: white;
   margin-bottom: 1.5rem;
 }
 
 .navigation-menu {
   img {
-    height: 4rem;
+    height: 6rem;
     line-height: 5rem;
     float: right;
     margin: 0.5rem 1rem;
@@ -60,7 +62,7 @@
     position: absolute;
     font-size: 3rem;
     right: 0;
-    top: 2rem;
+    top: 4rem;
     background-color: white;
     list-style-type: none;
     z-index: 1;
@@ -74,5 +76,12 @@
         border-bottom: none;
       }
     }
+  }
+}
+
+.navigation-option {
+  a {
+    text-decoration: none;
+    color: black;
   }
 }

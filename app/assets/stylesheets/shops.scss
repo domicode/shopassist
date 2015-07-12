@@ -1,3 +1,5 @@
+$orange: rgb(245,160,23);
+
 #storesearch {
   background: lighten(#444, 20%);
   font-size: 4rem;
@@ -21,6 +23,7 @@
     vertical-align: bottom;
     position: absolute;
     bottom: 0;
+    z-index: -1;
   }
 }
 
@@ -51,10 +54,9 @@
   position: absolute;
   right: 1rem;
   top: 1rem;
-  z-index: 50;
 }
 
-#artisansList, #groceriesList {
+#artisansList, #groceriesList, #findProductList {
   display: none;
 }
 
@@ -97,3 +99,5 @@
     background: linear-gradient(to bottom, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%)
   }
 }
+
+
